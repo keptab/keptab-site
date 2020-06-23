@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html id="keptab" class="nojs">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords"  content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+	<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}">
+</head>
+<body class="page{% if page.page_class %}{{ ' ' | append: page.page_class}}{% endif %}">
+	<div id="root">
+		<div id="app">
+            {% include header.html %}
+            <div id="container">
+                {{ content }}
+            </div>
+            {% include footer.html %}
+		</div>
+    </div>
+    <script type="text/javascript" id="js-conf">
+        {% if site.google_analytics %}var _gaId = '{{ site.google_analytics.id }}';var _gaDomain = '{{ site.google_analytics.domain }}';{% endif %}
+        {% if site.disqus %}var disqus_shortname = '{{ site.disqus.shortname }}';{% endif %}
+    </script>
+    <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}" id="js-main"></script>
+</body>
+</html>

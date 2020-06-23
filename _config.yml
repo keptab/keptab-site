@@ -1,0 +1,21 @@
+# jekyll
+
+# site
+title: 'Keptab'
+description: ''
+keywords: ''
+url: 'https://keptab.com/'
+
+# build
+permalink: '/:title/'
+exclude: [
+  'node_modules',
+  'package.json',
+  'Gruntfile.js',
+  'README.md'
+]
+
+# google_analytics
+google_analytics:
+  id: 'UA-xxxxxxx-1'
+  domain: 'keptab.com'
