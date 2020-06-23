@@ -16,6 +16,6 @@ exclude: [
 ]
 
 # google_analytics
-google_analytics:
-  id: 'UA-xxxxxxx-1'
-  domain: 'keptab.com'
+# google_analytics:
+#   id: 'UA-xxxxxxx-1'
+#   domain: 'keptab.com'
