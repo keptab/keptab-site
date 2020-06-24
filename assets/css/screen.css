@@ -1,0 +1,147 @@
+/* (c) 2020 Keptab. All rights reserved */
+
+
+/* reset */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, code, em, img, dl, dt, dd, ol, ul, li, form, table, caption, th,
+td, canvas, embed, button {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* global */
+
+html {
+	font-size: 62.5%; /* 1rem=10px */
+	height: 100%;
+}
+body, input, textarea, td, button {
+	font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
+	font-size: 1.4rem; /* 1.4rem=14px */
+}
+code, pre {
+	font-size: 1.4rem; /* 1.4rem=14px */
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+a, a:link, a:visited, a:active {
+	color: #636a86;
+	text-decoration: none;
+}
+a:hover {
+	color: #636a86;
+	text-decoration: underline;
+}
+img {
+	vertical-align: middle;
+	line-height: 0;
+}
+
+
+/* base */
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+input {
+	line-height: normal;
+}
+button, input, optgroup, select, textarea {
+	font: inherit;
+	color: inherit;
+}
+table {
+	border-collapse: collapse;
+	background-color: transparent;
+}
+caption {
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	color: #636c72;
+	text-align: left;
+	caption-side: bottom;
+}
+th {
+	text-align: left;
+}
+label {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+}
+
+
+/* common */
+
+.faded { background: #F7F7F7; }
+.muted { color: #636c72 !important; }
+.fl { float: left; }
+.fr { float: right; }
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+.shown {
+	display: block;
+	visibility: visible;
+}
+.bfc {
+	overflow: hidden;
+	zoom: 1;
+}
+
+
+/* layout */
+
+.clearfix {
+	*zoom: 1;
+}
+.container, .row {
+	min-width: 200px;
+	max-width: 1200px;
+	margin: 0 auto;
+	/*margin-left: 200px;*/
+}
+.container:before, .container:after,
+.clearfix:before, .clearfix:after,
+.row:before, .row:after {
+	display: table;
+	content: "";
+}
+.container:after, .clearfix:after, .row:after {
+	clear: both;
+}
+#container { min-height: 300px; }
+#container #main {
+	float: left;
+	max-width: 630px;
+}
+#container #side {
+	float: left;
+	margin-left: 40px;
+	max-width: 1000px;
+	min-width: 250px;
+	min-height: 100px;
+}
