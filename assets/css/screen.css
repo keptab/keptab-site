@@ -120,9 +120,8 @@ label {
 }
 .container, .row {
 	min-width: 200px;
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
-	/*margin-left: 200px;*/
 }
 .container:before, .container:after,
 .clearfix:before, .clearfix:after,
@@ -144,4 +143,64 @@ label {
 	max-width: 1000px;
 	min-width: 250px;
 	min-height: 100px;
+}
+
+
+ /* header */
+
+#header {
+	border-bottom: 1px dashed #DDD;
+	min-width: 800px;
+}
+#header .container {
+	display: flex;
+	align-items: center;
+}
+#brand {
+	line-height: 100%;
+	margin: 0;
+}
+#brand::before {
+	content: " ";
+	position: absolute;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: -80px;
+	background: url(/assets/img/logo.svg) no-repeat center center;
+	background-size: 64px 64px;
+	width: 64px;
+	height: 64px;
+}
+#brand a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 100%;
+	color: #000;
+	padding: 34px 0;
+}
+#nav {
+	flex-grow: 2;
+	display: flex;
+}
+#nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+#nav ul li {
+	margin-left: 2rem;
+}
+#nav ul li a {
+	display: inline-block;
+	font-size: 2rem;
+	padding: 1rem;
+	text-decoration: none;
+}
+#nav .main-nav {
+	margin-left: 5rem;
+}
+#nav .user-nav {
+	flex-grow: 2;
+	justify-content: flex-end;
 }
