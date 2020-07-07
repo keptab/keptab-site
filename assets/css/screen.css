@@ -458,7 +458,7 @@ h6 { font-size: 1rem; }
 #container {
 	min-height: 300px;
 }
-#container #main {
+/* #container #main {
 	float: left;
 	max-width: 600px;
 }
@@ -468,7 +468,7 @@ h6 { font-size: 1rem; }
 	max-width: 1000px;
 	min-width: 150px;
 	min-height: 100px;
-}
+} */
 
 
  /* header */
@@ -534,7 +534,7 @@ h6 { font-size: 1rem; }
 
 
 #footer {
-	margin-top: 2rem;
+	margin-top: 5rem;
 }
 #footer .container {
 	max-width: 800px;
@@ -575,7 +575,18 @@ h6 { font-size: 1rem; }
 }
 
 
-/* pages */
+
+/* article */
+
+.article {
+	margin: 5rem 0;
+}
+.article .title {
+	margin-bottom: 3rem;
+}
+
+
+/* site index */
 
 .site.index .hero .intro {
 	text-align: center;
@@ -614,4 +625,12 @@ h6 { font-size: 1rem; }
 }
 
 
+/* site apps */
 
+.site.apps .hero .apps {
+	padding-bottom: 5rem;
+	border-bottom: 1px dashed #EEE;
+}
+.site.apps .hero .security {
+	margin-top: 5rem;
+}
