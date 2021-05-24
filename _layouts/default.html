@@ -6,7 +6,7 @@
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.desc }}{% endif %}">
     <meta name="keywords"  content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 	<title>{% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/screen.css?v=20210523' | prepend: site.baseurl }}">
     <meta property="og:site_name" content="Keptab">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.desc }}{% endif %}">
@@ -19,7 +19,7 @@
     <link rel="icon" type="image/svg+xml" sizes="128x128" href="{{ '/assets/img/keptab-logo.svg' | prepend: site.baseurl }}">
     <link rel="apple-touch-icon" sizes="256x256" href="{{ '/assets/img/keptab-logo-256x256.png' | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.link }}">
-    <link rel="manifest" href="/assets/keptab.manifest">
+    <link rel="manifest" href="/assets/manifest.json">
     {% for style in page.styles %}<link rel="stylesheet" href="{{ style }}" />
     {% endfor %}
 </head>
@@ -38,7 +38,7 @@
         window.gaId = '{{ site.meta.google.gaId }}'
         window.gaDomain = '{{ site.meta.google.gaDomain }}'
     </script>
-    <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}" id="js-main"></script>
+    <script src="{{ '/assets/js/main.js?v=20210523' | prepend: site.baseurl }}" id="js-main"></script>
     {% for script in page.scripts %}<script src="{{ script }}"></script>
     {% endfor %}
 </body>
