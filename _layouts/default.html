@@ -3,15 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.desc }}{% endif %}">
     <meta name="keywords"  content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
-	<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-	<link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<title>{% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
     <link rel="stylesheet" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ '/assets/css/markdown.css' | prepend: site.baseurl }}">
+    <meta property="og:site_name" content="Keptab">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.desc }}{% endif %}">
+    <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ '/assets/img/keptab-head-image.png' | prepend: site.baseurl }}{% endif %}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.link }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/keptab-logo-16x16.png' | prepend: site.baseurl }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/keptab-logo-32x32.png' | prepend: site.baseurl }}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/img/keptab-logo-64x64.png' | prepend: site.baseurl }}">
+    <link rel="icon" type="image/svg+xml" sizes="128x128" href="{{ '/assets/img/keptab-logo.svg' | prepend: site.baseurl }}">
+    <link rel="apple-touch-icon" sizes="256x256" href="{{ '/assets/img/keptab-logo-256x256.png' | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.link }}">
+    <link rel="manifest" href="/assets/keptab.manifest">
+    {% for style in page.styles %}<link rel="stylesheet" href="{{ style }}" />
+    {% endfor %}
 </head>
-<body class="page{% if page.page_class %}{{ ' ' | append: page.page_class}}{% endif %}">
+<body class="{{ layout.class }}{% if page.page_class %}{{ ' ' | append: page.page_class}}{% endif %}">
 	<div id="root">
 		<div id="app">
             {% include header.html %}
@@ -22,9 +34,12 @@
 		</div>
     </div>
     <script type="text/javascript" id="js-conf">
-        {% if site.google_analytics %}var _gaId = '{{ site.google_analytics.id }}';var _gaDomain = '{{ site.google_analytics.domain }}';{% endif %}
-        {% if site.disqus %}var disqus_shortname = '{{ site.disqus.shortname }}';{% endif %}
+        window.keptabApps = {{ site.apps | jsonify }}
+        window.gaId = '{{ site.meta.google.gaId }}'
+        window.gaDomain = '{{ site.meta.google.gaDomain }}'
     </script>
     <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}" id="js-main"></script>
+    {% for script in page.scripts %}<script src="{{ script }}"></script>
+    {% endfor %}
 </body>
 </html>

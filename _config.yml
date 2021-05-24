@@ -1,21 +1,61 @@
-# jekyll
+safe: false
+permalink: /:title
+exclude: 
+  - 'README.md'
 
-# site
-title: 'Keptab'
-description: ''
-keywords: ''
-url: 'https://keptab.com/'
+name: Keptab
+desc: Kept tabs as tabs group and read them later
+tags: Keptab, Keptab Chrome, Keptab Firefox, Keptab Edge, Keptab Safari
+link: 'https://keptab.com'
 
-# build
-permalink: '/:title/'
-exclude: [
-  'node_modules',
-  'package.json',
-  'Gruntfile.js',
-  'README.md'
-]
+custom:
+  links:
+    - name: Keptab Blog
+      link: https://blog.keptab.com
+    
+    - name: Keptab Translations
+      link: https://translations.keptab.com
 
-# google_analytics
-# google_analytics:
-#   id: 'UA-xxxxxxx-1'
-#   domain: 'keptab.com'
+apps:
+  chrome:
+    name: Chrome
+    link: https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi
+    version: v0.3
+  
+  edge:
+    name: Edge
+    link: https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi
+    version: v0.3
+  
+  firefox:
+    name: Firefox
+    link: https://addons.mozilla.org/en-US/firefox/addon/keptab/
+    version: v0.3
+  
+  safari:
+    name: Safari
+    link: https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi
+    version: v0.3
+  
+  opera:
+    name: Opera
+    link: https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi
+    version: v0.3
+
+meta:
+  author:
+    name: Keptab Team
+    email: hi@keptab.com
+    about: We create the Project Keptab.
+
+  google:
+    gaId: UA-123456-1
+    gaDomain: keptab.com
+  
+  facebook:
+    name: Keptab
+    link: https://www.facebook.com/keptab
+  
+  twitter:
+    name: Keptab
+    link: https://twitter.com/keptab

@@ -1,0 +1,36 @@
+---
+layout: page
+page_class: site page migrate
+permalink: /migrate
+title: Keptab Migrate
+description: Keptab Migrate
+---
+
+<div class="container">
+    <article class="hero article">
+        <h1 class="article-title">Migrate to Keptab</h1>
+        <div class="article-content markdown">
+            <p>This tools help you migrate data from <a href="https://one-tab.com">OneTab</a> to Keptab.</p>
+            <ul>
+                <li>Go to OneTab <strong>import/export</strong> page and get the export content.</li>
+                <li>Paste the OneTab export content to the blank textarea.</li>
+                <li>Click <strong>Migrate</strong> button and wait a moment to download file automatic.</li>
+                <li>Go to <strong>Keptab Options</strong> page and <strong>import</strong> the download file</li>
+            </ul>
+        </div>
+    </article>
+    <div class="tabs">
+        <ul class="tabs-lists">
+            <li class="tab-list onetab">OneTab > Keptab</li>
+        </ul>
+        <div class="tabs-contents">
+            <div class="tab-content onetab active">
+                <textarea id="js-onetab-textarea" class="textarea"></textarea>
+                <div class="switch">
+                    <button id="js-onetab-button" class="button">Migrate</button>
+                    <a id="js-onetab-download" class="download"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

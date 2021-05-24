@@ -1,41 +1,22 @@
 ---
-layout: terms
+layout: post
 page_class: site privacy
 permalink: /privacy
 title: Keptab Privacy Policy
 description: Keptab Privacy Policy
 ---
 
+* toc
+{:toc}
+
+## Overview
 
 **Keptab** is fully committed to safeguarding your privacy. This Privacy Policy applies to information that we collect about you when you use our website. We store and process all data in the EU in compliance with the GDPR (General Data Protection Regulation).
 Below we explain how we collect, use, and share information about you, along with the choices that you have with respect to that information.
 
 [Contact us](mailto:hi@keptab.com) if you have any questions or problems regarding the use of your Personal Data and we will gladly assist you.
 
-### Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Definitions](#definitions)
-- [Principles We Follow for Processing Personal Data](#principles-we-follow-for-processing-personal-data)
-- [Legal Bases for Processig Personal Data](#legal-bases-for-processig-personal-data)
-- [Data Subject’s Rights](#data-subjects-rights)
-- [Information We Collect](#information-we-collect)
-  - [_Information You Provide to Us_](#information-you-provide-to-us)
-  - [_Information We Collect Automatically_](#information-we-collect-automatically)
-  - [_Information We Collect from Other Sources_](#information-we-collect-from-other-sources)
-- [How And Why We Process Personal Data](#how-and-why-we-process-personal-data)
-  - [_Purposes for Process Personal Data_](#purposes-for-process-personal-data)
-- [Sharing Information](#sharing-information)
-  - [_How We Share Information_](#how-we-share-information)
-  - [_Information Shared Publicly_](#information-shared-publicly)
-  - [_Information Shared Outside EEA_](#information-shared-outside-eea)
-- [How Long We Keep Information](#how-long-we-keep-information)
-- [Security](#security)
-- [Choices](#choices)
-- [Contact Information](#contact-information)
-- [Privacy Policy Changes](#privacy-policy-changes)
-
-### Definitions
+## Definitions
 
 **Personal Data** – any information relating to an identified or identifiable natural person.  
 **Processing** – any operation or set of operations which is performed on Personal Data or on sets of Personal Data.  
@@ -44,7 +25,7 @@ Below we explain how we collect, use, and share information about you, along wit
 **We/Us** (either capitalized or not) – Keptab  
 **Our Website** – [https://keptab.com/](https://keptab.com/)
 
-### Principles We Follow for Processing Personal Data
+## Principles We Follow for Processing Personal Data
 
 We process your Personal Data according to the following data protection principles:
 *	Processing is lawful, fair, transparent. Our Processing activities have lawful grounds. We always consider your rights before Processing Personal Data. We will provide you information regarding Processing upon request.
@@ -54,7 +35,7 @@ We process your Personal Data according to the following data protection princip
 *	We will do our best to ensure the accuracy of data.
 *	We will do our best to ensure the integrity and confidentiality of data.
 
-### Legal Bases for Processig Personal Data
+## Legal Bases for Processig Personal Data
 
 We process your Personal Data on the grounds that:
 *	The use is necessary in order to fulfill our commitments to you under our Terms of Service or other agreements with you or is necessary to administer your account (for example, in order to enable access to our website).
@@ -63,7 +44,7 @@ We process your Personal Data on the grounds that:
 *	We have a legitimate interest in using your information, for example, to provide and update our Services, to improve our Services so that we can offer you an even better user experience, to safeguard our Services, to communicate with you, to measure, gauge, and improve the effectiveness of our advertising, and better understand user retention and attrition, to monitor and prevent any problems with our Services.
 *	You have given us your consent, for example, before we place certain cookies on your device and access and analyze them later on, as described in our [Cookie Policy](https://keptab.com/cookie-policy).
 
-### Data Subject’s Rights
+## Data Subject’s Rights
 
 If you are located in certain countries, including those that fall under the scope of the European General Data Protection Regulation (AKA the “GDPR”), data protection laws give you rights with respect to your personal data, subject to any exemptions provided by the law, including the following rights:
 
@@ -81,11 +62,11 @@ If you are located in certain countries, including those that fall under the sco
 
 You can usually access, correct, or delete your personal data using your account settings and tools that we offer, but if you aren’t able to do that, or you would like to contact us about one of the other rights, scroll down to How to Reach Us to, well, find out how to reach us. EU individuals also have the right to make a complaint to a government supervisory authority.
 
-### Information We Collect
+## Information We Collect
 
 We only collect information about you if we have a reason to do so (for example, to provide our Services, to communicate with you, or to make our Services better). We collect information in three ways: if and when you provide information to us, automatically through operating our Services, and from outside sources. Let’s go over the information that we collect.
 
-#### _Information You Provide to Us_
+### _Information You Provide to Us_
 
 It’s probably no surprise that we collect information that you provide to us. The amount and type of information depends on the context and how we use the information. Here are some examples:
 
@@ -95,7 +76,7 @@ It’s probably no surprise that we collect information that you provide to us. 
 *   **Content Information:** Depending on the Services you use, you may also provide us with information about you in draft and published content. For example, if you write a blog post that includes biographic information about you, we will have that information, and so will anyone with access to the Internet if you choose to publish the post publicly. This might be obvious to you…but it’s not to everyone!
 *   **Communications With Us (Hi There!):** You may also provide us information when you respond to surveys or communicate with our Happiness Engineers about a support question.
 
-#### _Information We Collect Automatically_
+### _Information We Collect Automatically_
 
 We also collect some information automatically:
 
@@ -104,13 +85,13 @@ We also collect some information automatically:
 *   **Location Information:** We may determine the approximate location of your device from your IP address. We collect and use this information to, for example, calculate how many people visit our Services from certain geographic regions.
 *   **Information from Cookies & Other Technologies:** A cookie is a small string of information that a website stores on a visitor’s computer, and that the visitor’s browser provides to the website each time the visitor returns. Pixel tags (also called web beacons) are small blocks of code placed on websites and emails. Keptab uses cookies and other technologies like pixel tags to help us identify and track visitors, usage, and access preferences for our Services, as well as track and understand email campaign effectiveness and to deliver targeted ads. For more information about our use of cookies and other technologies for tracking, including how you can control the use of cookies, please see our [Cookie Policy](https://keptab.com/cookie-policy).
 
-#### _Information We Collect from Other Sources_
+### _Information We Collect from Other Sources_
 
 We may also get information about you from other sources. For example, if you create or log into your account through another service (like Google) or if you connect your account to a social media service (like Twitter or Facebook), we will receive information from that service (such as your username, basic profile information, and friends list) via the authorization procedures used by that service. The information we receive depends on which services you authorize and any options that are available. We may also get information, such as a mailing address, from third party services about individuals who are not yet our users (…but we hope will be!), which we may use, for example, for marketing and advertising purposes like postcards and other mailers advertising our services.
 
-### How And Why We Process Personal Data
+## How And Why We Process Personal Data
 
-#### _Purposes for Process Personal Data_
+### _Purposes for Process Personal Data_
 
 We use information about you as mentioned above and for the purposes listed below:
 
@@ -122,9 +103,9 @@ We use information about you as mentioned above and for the purposes listed belo
 *   To communicate with you (for example through an email, about offers and promotions offered by Keptab and others we think will be of interest to you), solicit your feedback, or keep you up to date on Keptab and our products.
 *   To personalize your experience using our Services, target our marketing messages to groups of our users (for example, those who have a particular plan with us or have been our user for a certain length of time), and serve relevant advertisements.
 
-### Sharing Information
+## Sharing Information
 
-#### _How We Share Information_
+### _How We Share Information_
 
 We do not sell our users’ private personal information. We only work with Processing partners who are able to ensure adequate level of protection to your Personal Data. We share information about you in the limited circumstances spelled out below and with appropriate safeguards on your privacy:
 
@@ -137,28 +118,28 @@ We do not sell our users’ private personal information. We only work with Proc
 *   **Aggregated or De-Identified Information:** We may share information that has been aggregated or reasonably de-identified, so that the information could not reasonably be used to identify you. For instance, we may publish aggregate statistics about the use of our Services and we may share a hashed version of your email address to facilitate customized ad campaigns on other platforms.
 *   **Published Support Requests:** And if you send us a request (for example, via a support email or one of our feedback mechanisms), we reserve the right to publish that request in order to help us clarify or respond to your request or to help us support other users.
 
-#### _Information Shared Publicly_
+### _Information Shared Publicly_
 
 Information that you choose to make public is–you guessed it–disclosed publicly. That means, of course, that information like your public profile, bio or other content that you make public on our website, and your “Likes” and comments, are all available to others. For example, the photo that you upload to your public profile.
 Public information may also be indexed by search engines or used by third parties. Please keep all of this in mind when deciding what you would like to share.
 
-#### _Information Shared Outside EEA_
+### _Information Shared Outside EEA_
 
 The information about you that we process when you use the Services in the EU may be used, stored, and/or accessed by individuals operating outside the European Economic Area (EEA) who work for us, other members of our group of companies, or third party data processors. This is required for the purposes listed in the How and Why We Process Personal Data section above. When providing information about you to entities outside the EEA, we will take appropriate measures to ensure that the recipient protects your personal information adequately in accordance with this Privacy Policy as required by applicable law. These measures include:
 
 *   In the case of US based entities, entering into European Commission approved standard contractual arrangements with them, or ensuring they have signed up to the [EU-US Privacy Shield](https://www.privacyshield.gov/welcome); or
 *   In the case of entities based in other countries outside the EEA, entering into European Commission approved standard contractual arrangements with them.
 
-### How Long We Keep Information
+## How Long We Keep Information
 
 We generally discard information about you when we no longer need the information for the purposes for which we collect and use it (which are described in the section above on How and Why We Use Information) and we are not legally required to continue to keep it. For example, we keep the web server logs that record information about a visitor to our website, such as the visitor’s IP address, browser type, and operating system, for approximately 30 days. We retain the logs for this period of time in order to, among other things, analyze traffic to our website and investigate issues if something goes wrong on our website. As another example, when you delete a post, page, or comment from our sites, it stays in your Trash folder for thirty days just in case you change your mind and would like restore that content (because starting again from scratch is no fun, at all). After the thirty days are up, the deleted content may remain on our encrypted backups and caches until purged.
 
-### Security
+## Security
 
 While no online service is 100% secure, we work very hard to protect information about you against unauthorized access, use, alteration, or destruction, and take reasonable measures to do so. We use safe protocols for communication and transferring data (such as HTTPS). We use anonymising and pseudonymising where suitable. We monitor our Services for potential vulnerabilities and attacks. We implement a robust encrypted backup strategy.
 
 
-### Choices
+## Choices
 
 You have several choices available when it comes to information about you:
 
@@ -167,7 +148,7 @@ You have several choices available when it comes to information about you:
 *   **Set Your Browser to Reject Cookies**.
 *   **Export your Data or Delete your Account and Data:** On our [Privacy Tools Page](https://keptab.com/privacy) you can download your data or, if you no longer want to use our Services, close your account and delete your data. Please keep in mind that we may continue to retain your information after closing your account, as described in How Long We Keep Information above (for example, when that information is reasonably needed to comply with or demonstrate our compliance with legal obligations such as law enforcement requests, or reasonably needed for our legitimate business interests.
 
-### Contact Information
+## Contact Information
 
 If you have a question about this Privacy Policy, or you would like to contact us about any of the rights mentioned in the Your Rights section above, please [contact us](mailto:hi@keptab.com).
 
@@ -176,7 +157,7 @@ If you have a question about this Privacy Policy, or you would like to contact u
 Email: hi@keptab.com  
 Feedback: [https://keptab.com/feedback](https://keptab.com/feedback)
 
-### Privacy Policy Changes
+## Privacy Policy Changes
 
 Although most changes are likely to be minor, Keptab may change its Privacy Policy from time to time. Keptab encourages visitors to frequently check this page for any changes to its Privacy Policy. If we make changes, we will notify you by revising the change log below, and, in some cases, we may provide additional notice (such as adding a statement to our homepage or our blog), or sending you a notification through email or your dashboard). Your further use of the Services after a change to our Privacy Policy will be subject to the updated policy. That’s it! Thanks for reading.
 

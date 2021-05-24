@@ -1,17 +1,17 @@
 <header id="header" class="header">
     <div class="container">
         <h1 id="brand" class="brand">
-            <a href="{{ site.url }}">{{ site.title }}</a>
+            <a href="{{ site.link }}" title="Go to Keptab Home">{{ site.name }}</a>
         </h1>
         <nav id="nav" class="nav">
             <ul class="main-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/apps">Apps</a></li>
-                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about" title="Go to Keptab About">About</a></li>
+                <li><a href="https://blog.keptab.com" title="Go to Keptab Blog">Blog</a></li>
+                <li><a href="/faq" title="Go to Keptab FAQ">FAQ</a></li>
             </ul>
-            <!-- <ul class="user-nav">
-                <li><a href="https://id.keptab.com/login">Login</a></li>
-            </ul> -->
+            <div class="user-nav">
+                <a id="js-install" class="install" href="{{ site.apps.chrome.link }}" title="Add Keptab - It's Free">Add Keptab - It's Free</a> 
+            </div>
         </nav>
     </div>
 </header>
