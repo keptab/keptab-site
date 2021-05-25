@@ -77,12 +77,12 @@ var $browser = (function() {
 
     // keptab 支持的浏览器版本
     function browser(name) {
-        if ($browser.browser.firefox) name = 'firefox' 
-        if ($browser.browser.safari) name = 'safari'
-        if ($browser.browser.opera && !$browser.engine.Blink) name = 'opera'
-        if ($browser.browser.webkit && !$browser.engine.EdgeHTML) name = 'edge'
-        if ($browser.browser.chrome) name = 'chrome'
-        return name
+        if ($browser.browser.firefox) return 'firefox' 
+        if ($browser.browser.safari) return 'safari'
+        if ($browser.browser.opera && !$browser.engine.Blink) return 'opera'
+        if ($browser.browser.edgeChromium) return 'edge'
+        if ($browser.browser.chrome) return 'chrome'
+        return 'chrome'
     }
     
     var name = browser()
