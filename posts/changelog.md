@@ -52,6 +52,6 @@ You can get an introduction from the blog post [Introducing Project Keptab](http
 
 First initial release is chrome version and you can download at [Chrome Webstore](https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi).
 
-![keptab screenshot v0.1 chrome](../media/changelog/keptab-screenshot-v0.1-chrome.png)
+![keptab screenshot v0.1 chrome](../media/changelog/keptab-index-screenshot-v0.1-chrome.png)
 
 
