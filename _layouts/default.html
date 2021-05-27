@@ -6,7 +6,7 @@
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.desc }}{% endif %}">
     <meta name="keywords"  content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 	<title>{% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/screen.css?v=20210523' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/screen.css?v=20210527' | prepend: site.baseurl }}">
     <meta property="og:site_name" content="Keptab">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.desc }}{% endif %}">
@@ -38,7 +38,7 @@
         window.gaId = '{{ site.meta.google.gaId }}'
         window.gaDomain = '{{ site.meta.google.gaDomain }}'
     </script>
-    <script src="{{ '/assets/js/main.js?v=20210523' | prepend: site.baseurl }}" id="js-main"></script>
+    <script src="{{ '/assets/js/main.js?v=20210527' | prepend: site.baseurl }}" id="js-main"></script>
     {% for script in page.scripts %}<script src="{{ script }}"></script>
     {% endfor %}
 </body>

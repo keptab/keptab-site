@@ -1,6 +1,11 @@
 /* (c) 2021 Keptab. All rights reserved */
 
 
+// JS 检测，另外意义上的 noscript
+(function() {
+    document.documentElement.classList.replace('nojs', 'hasjs')
+})();
+
 // 同时使用特性检测和 User-Agent 检测（两者是或关系）来测试浏览器
 // 参考链接 https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
 var $browser = (function() {
@@ -109,6 +114,7 @@ var $browser = (function() {
                 .filter(tab => tab)
                 .map(tab => {
                     const [url, ...title] = tab.split('|')
+                    // 此处其实需要检验一下 URL 的正确性
                     return {
                         url: url.trim(),
                         title: title.join().trim(),
@@ -139,11 +145,21 @@ var $browser = (function() {
     // https://gist.github.com/krishpop/8a954b171a5403117bf0f2fdda0a8e90
     button.addEventListener('click', function() {
         var textarea = document.getElementById('js-onetab-textarea')
-        var lists = onetab(textarea.value || '')
+        if (!textarea.value) {
+            alert('Please paste the OneTab export content to the blank textarea') // 提示一下需要填写
+            return
+        }
+        try {
+            var lists = onetab(textarea.value)
+        } catch (error) {
+            alert('The OneTab export content parse error, please review your content')
+            return
+        }
         var download = document.getElementById('js-onetab-download')
         download.setAttribute('href', `data:text/plain;charset=utf-8,${encodeURIComponent(JSON.stringify(lists, null, 2))}`)
         download.setAttribute('download', `onetab-to-keptab-${ Date.now() }.json`)
         download.click()
+        alert('File has download and review this before import into Keptab')
     })
 
 })();
