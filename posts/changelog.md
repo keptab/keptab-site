@@ -21,13 +21,13 @@ The changelog about Keptab browser extensions.
 |     Platform     |      Version     |      Release     |     Download     |
 |:----------------:|:----------------:|:----------------:|:----------------:|
 |      Chrome      |       v0.3       |     2021/04/18   |  [keptab-chrome-webstore-v0.3-r20210418](../media/download/keptab-chrome-webstore-v0.3-r20210418.zip)  |
-|  Microsoft Edge  |       v0.3       |     2021/05/30   |  [keptab-microsoft-edge-addons-v0.3-r20210530](../media/download/keptab-chrome-webstore-v0.3-r20210418.zip)  |
+|  Microsoft Edge  |       v0.3       |     2021/05/25   |  [keptab-microsoft-edge-addons-v0.3-r20210525](../media/download/keptab-microsoft-edge-addons-v0.3-r20210525.zip)  |
 
 The version v0.3 added dark mode, you can let keptab follow the browser's color schema or just make it as dark/light mode.
 
 ### New Release as Microsoft Edge Addons
 
-The version v0.3 is first release at [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/keptab) at 2021/05/30.
+The version v0.3 is first release at [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/keptab/jhajaihldpgefhccepbjdpiimikplhng) at 2021/05/25.
 
 ## Bug Fixed, Version: 0.2, Release: 2020/09/13
 
