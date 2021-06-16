@@ -15,9 +15,11 @@ There are some ways to feedback us.
 
 ## Contact for Questions
 
-If you have more questions, feel free to contact us at **hi@keptab.com**. And more, you can post an comment at [Keptab Blog](https://blog.keptab.com), we will get touch to you after a moment.
+If you have more questions, feel free to contact us at **hi@keptab.com**. 
 
-If you are a Github fans, please feel free to create an issue in [Keptab Blog Issue](https://github.com/keptab/keptab-blog/issues). We will post reply later.
+And more, you can post an comment at [Keptab Blog](https://blog.keptab.com), we will get touch to you after a moment.
+
+If you are a Github fans, please feel free to create an issue in [Keptab Issue](https://github.com/keptab/keptab/issues). We will post reply later.
 
 ## Contact for Security Researchers
 
