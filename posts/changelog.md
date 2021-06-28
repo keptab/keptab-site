@@ -15,6 +15,24 @@ The changelog about Keptab browser extensions.
 
 
 
+## Bug Fixed, Version: 0.4, Release: 2021/06/28
+
+|     Platform     |      Version     |      Release     |     Download     |
+|:----------------:|:----------------:|:----------------:|:----------------:|
+|      Chrome      |       v0.4       |     2021/06/28   |  [keptab-chrome-webstore-v0.4-r20210628](../media/download/keptab-chrome-webstore-v0.4-r20210628.zip)  |
+|  Microsoft Edge  |       v0.4       |     2021/06/28   |  [keptab-microsoft-edge-addons-v0.4-r20210628](../media/download/keptab-microsoft-edge-addons-v0.4-r20210628.zip)  |
+
+The version v0.4 is bug fixed, with fixed as follow:
+
+- Fixed: open Keptab index with empty tabs that will lead to chrome crash
+- Fixed: rewrite store all tabs in all windows methods that will lead to chrome crash
+- Fixed: sometimes save with `0 Tabs`, it will never happen
+- Fixed: with `chrome.contextMenus.ACTION_MENU_TOP_LEVEL_LIMIT `, rewrite the contextMenus
+
+The version v0.4 add new feature as follow:
+
+- Feature: add `Export` and `Options` button to Keptab index page
+
 
 ## Dark Mode! Version: 0.3, Release: 2021/04/18
 
