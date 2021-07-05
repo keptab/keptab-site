@@ -21,6 +21,7 @@ The changelog about Keptab browser extensions.
 |:----------------:|:----------------:|:----------------:|:----------------:|
 |      Chrome      |       v0.4       |     2021/06/28   |  [keptab-chrome-webstore-v0.4-r20210628](../media/download/keptab-chrome-webstore-v0.4-r20210628.zip)  |
 |  Microsoft Edge  |       v0.4       |     2021/06/28   |  [keptab-microsoft-edge-addons-v0.4-r20210628](../media/download/keptab-microsoft-edge-addons-v0.4-r20210628.zip)  |
+|      Opera       |       v0.4       |     2021/07/05   |  [keptab-opera-addons-v0.4-r20210705.zip](../media/download/keptab-opera-addons-v0.4-r20210705.zip)  |
 
 The version v0.4 is bug fixed, with fixed as follow:
 
@@ -32,6 +33,12 @@ The version v0.4 is bug fixed, with fixed as follow:
 The version v0.4 add new feature as follow:
 
 - Feature: add `Export` and `Options` button to Keptab index page
+
+### New Release as Opera Addons
+
+The version v0.4 is first release at [Opera Addons](https://addons.opera.com/extensions/details/keptab/)
+
+If you used _Yandex Browser_, please go to [Opera Addons Catalog]({{ site.apps.opera.link }}) to add Keptab. You known, _Yandex Browser_ only supports extensions from the Opera add-ons catalog.
 
 
 ## Dark Mode! Version: 0.3, Release: 2021/04/18

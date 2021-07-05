@@ -20,27 +20,27 @@ apps:
   chrome:
     name: Chrome
     link: https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi
-    version: v0.3
+    version: v0.4
   
   edge:
     name: Edge
     link: https://microsoftedge.microsoft.com/addons/detail/keptab/jhajaihldpgefhccepbjdpiimikplhng
-    version: v0.3
+    version: v0.4
   
   firefox:
     name: Firefox
     link: https://addons.mozilla.org/en-US/firefox/addon/keptab/
-    version: v0.3
+    version: v0.4
   
   safari:
     name: Safari
     link: https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi
-    version: v0.3
+    version: v0.4
   
   opera:
     name: Opera
-    link: https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi
-    version: v0.3
+    link: https://addons.opera.com/extensions/details/keptab/
+    version: v0.4
 
 meta:
   author:
