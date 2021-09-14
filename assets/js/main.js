@@ -123,8 +123,8 @@ var $browser = (function() {
                         muted: false
                     }
                 })
-            ).map(tabs => {
-                const now = Date.now()
+            ).map((tabs, index) => {
+                const now = Date.now() + index
                 const urls = tabs.reduce((urls, tab) => {
                     urls.push(tab.url)
                     return urls
