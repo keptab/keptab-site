@@ -1,0 +1,198 @@
+
+/* preflight */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* 主题定义 */
+
+:root.light {
+    --bg: #fff;
+    --text: #000;
+    --link: #20609f;
+    --code: #301900;         /* inline-code */
+
+    --quote-bg: #F1F6F9;     /* hsl(197, 37%, 96%) */
+    --quote-border: #E0ECF1; /* hsl(197, 37%, 91%) */
+
+    --table-border: #F2F2F2; /* hsl(0, 0%, 95%) */
+    --table-header: #EEE;    /* hsl(0, 0%, 80%) */
+    --table-stripe: #F7F7F7; /* hsl(0, 0%, 97%) */
+}
+:root.dark {
+    --bg: #131516;
+    --text: #98a3ad;
+    --link: #2b79a2;
+    --code: #c5c8c6;         /* inline-code */
+
+    --quote-bg: #242638;     /* hsl(234, 21%, 18%); */
+    --quote-border: #2E3147; /* hsl(234, 21%, 23%); */
+
+    --table-border: #1F2223; /* hsl(200, 7%, 13%); */
+    --table-header: #42494C; /* hsl(200, 7%, 28%); */
+    --table-stripe: #1A1D1E; /* hsl(200, 7%, 11%); */
+}
+:root.dark img {
+    /* 在深色模式下图片的亮度比原来低点，对比度比原来高点，这样子图片的显示效果会柔和一点且用户看起来舒服点 */
+    filter: brightness(0.8) contrast(1.2);
+}
+@media (prefers-reduced-motion:reduce) {
+    /* 专门照顾所有不喜欢动画效果的小伙伴 */
+    * {
+        animation-duration: .01s !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01s !important
+    }
+}
+
+/* 全局样式 */
+
+:root { font-size: 62.5%; /* 1rem=10px */ }
+
+html {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    text-size-adjust: none;
+    margin: 0%;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+body, input, textarea, button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+}
+code {
+    font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+    font-size: 0.875em;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+main { overflow-wrap: break-word; }
+
+/* 公共样式 */
+
+.container { margin: 0 auto }
+
+.center { text-align: center; }
+.inline-block { display: inline-block; }
+.textarea {
+    background-color: var(--quote-bg); 
+    width: 100%; 
+    height: 20rem; 
+    margin: 2rem 0; 
+    padding: 1rem; 
+}
+
+.btn {
+	display: inline-block;
+	color: var(--bg);
+	border: 1px solid #1d98dc; /* 按钮颜色在 light/dark 均为中性色彩，不再单独调整 */
+	padding: 1rem 1.5rem;
+	line-height: 100%;
+	border-radius: 0.5rem;
+	background-color: #1d98dc;
+    -webkit-appearance: none;
+}
+.btn:hover {
+	outline: 0;
+	text-decoration: none;
+	color: var(--bg);
+	background-color: #0e8ed4;
+}
+
+/* 结构样式 */
+
+.header { border-bottom: 1px solid var(--table-border); margin-bottom: 3rem; }
+.header .container { display: flex; align-items: center; }
+.header .brand { font-size: 2.6rem; margin: 1rem; }
+.header .brand a { color: var(--text); text-decoration: none; }
+.header .main-nav { margin-left: auto; margin-right: 1rem; }
+.header .main-nav a { padding: 0.5rem 1rem; }
+.header .user-nav { margin: 1rem; }
+
+.content .container { max-width: 86rem; padding: 0 1rem; }
+
+.footer { margin-top: 8rem; }
+.footer .container { max-width: 86rem; padding: 0 1rem; }
+.footer .quick-nav { padding: 3rem 0; }
+.footer .quick-nav .container { border-top: 1px solid var(--table-border); display: flex; justify-content: space-between; }
+.footer .quick-nav .brand { flex-basis: 25rem; }
+.footer .quick-nav ul { list-style: none; margin: 0; padding: 0; }
+.footer .quick-nav ul li { margin-bottom: 1rem; }
+.footer .legal-nav { background-color: var(--table-header); padding: 2rem 0; }
+.footer .legal-nav a { margin: 0 0.5rem; }
+
+/* 内容样式 */
+
+.content p { line-height: 150%; }
+.content ol { line-height: 150%; }
+.content ul { line-height: 150%; }
+.content a { text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+.content img, .content video { max-width: 100%; }
+
+table { /* margin: 0 auto; */ border-collapse: collapse; }
+table td { padding: 1rem 2rem; border: 1px solid var(--table-border); }
+table thead { background: var(--table-header); }
+table thead td { font-weight: 700; border: none; }
+table thead th { padding: 1rem 2rem; }
+table thead tr { border: 1px solid var(--table-header); }
+/* Alternate background colors for rows */
+table tbody tr:nth-child(2n) { background: var(--table-stripe); }
+
+blockquote {
+    margin: 2rem 0;
+    padding: 0 2rem;
+    color: var(--text);
+    background-color: var(--quote-bg);
+    border-top: .1em solid var(--quote-border);
+    border-bottom: .1em solid var(--quote-border);
+}
+
+pre > code {
+    display: block;
+    overflow-x: auto;
+    background: var(--quote-bg);
+    color: var(--code);
+}
+:not(pre) > code {
+    display: inline;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+}
+:not(pre):not(a) > code {
+    background-color: var(--quote-bg);
+    color: var(--code);
+    overflow-x: initial;
+}
+pre > code {
+    padding: 1rem;
+}
+
+/* 响应式设计 */
+
+@media (max-width: 768px) {
+    .footer .quick-nav .container { display: block; }
+    .footer .quick-nav ul { list-style: initial; margin: initial; padding: 0 0 0 4rem; }
+}
+
+@media (max-width: 576px) {
+    body, input, textarea, button { font-size: 1.4rem; }
+    .header .user-nav { display: none; }
+}
+
+/* 特殊样式 */
+
+.game404 #a {
+    border: 1px solid #aaa;
+    margin: 0 auto;
+    max-width: 50rem;
+    max-height: 50rem;
+}

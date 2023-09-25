@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found - Keptab</title>
-    <meta name="description" content="We're sorry that we couldn't find the page you requested. Please retry after a moment.">
+    <title>Shortcuts - Keptab</title>
+    <meta name="description" content="Once you've added the Keptab extension to your browser, these keyboard shortcuts can be used from any tab.">
     <!-- opengraph -->
-    <meta property="og:title" content="Page Not Found - Keptab">
-    <meta property="og:description" content="We're sorry that we couldn't find the page you requested. Please retry after a moment.">
+    <meta property="og:title" content="Shortcuts - Keptab">
+    <meta property="og:description" content="Once you've added the Keptab extension to your browser, these keyboard shortcuts can be used from any tab.">
     <meta property="og:image" content="/assets/images/keptab-head-image.png">
     <!-- favicons -->
 	<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/keptab-logo-48x48.png">
@@ -35,19 +35,71 @@
     </header>
     <div class="content">
         <div class="container">
-            <main><h1>Page Not Found</h1>
-<p>We&#39;re sorry that we couldn&#39;t find the page you requested. Please retry after a moment.</p>
-<p>If you have any questions, please feel free to <a href="/feedback/">Feedback</a>.</p>
-<br>
-<hr>
-<div class="game404">
-    <h2>Shall We Play A Game? Shedding Snake!</h2>
-    <canvas id="a"></canvas>
-    <script type="text/javascript">
-        //! (c) 2020 Niklas Berg, https://github.com/nkholski/shedding-snake, GNU General Public License v3.0
-        W=a.width=a.height=900,Q=30,L=S=u=l=d=r=A=R=Y=U=I=O=P=T=0,c=a.getContext`2d`,c.textAlign="center",onkeydown=e=>{top["lld*rlurdu"[e.which%32%17]]=e.type[5],U=u?2:r?3:d?4:l?5:U,u=l=d=r=0},E=e=>{do{R=W*Math.random()|0}while(S[R]);S[R]=3},D=(e="#000")=>c.fillStyle=e,J=(e,t=3,i=50)=>c.fillText(e,9*i,9*t),F=(e,t=0)=>c.translate(15,15)+c.rotate(U*t)+J(e,.5,0),K=e=>c.font=e+"px a",setInterval(e=>{if(A){if(K(25),G=O[0]+(2==U?-Q:3==U?1:4==U?Q:-1),G+=G<0?W:G>W?-W-1:0,H=O.pop(),O=[G,...O],S[H]=--P<0?0:1,3==S[G])E(),S[H]=2,P=O.length,S=S.map(e=>2==e?1:e),T=++Y>T?Y:T,O.push(H);else if(S[G])return void(P=Y=U=A=0);for(S[G]=2,i=0;i<W;i++)c.save(),K(25),x=i%Q,c.translate(x*Q,i-x),$=O[0]==i,$&&F("🐸",1.6),D([,"#DDD","#693"][S[i]]),$||(c.fillRect(0,0,Q,Q),2==S[i]&&F`✖️`,3==S[i]&&F(i%2?"🍎":"🍒")),c.restore();D`#099`,J(`🕹️Score: ${Y} 🐍 Top: ${T}⭐`)}else K(60),D`#099`,J("🐍Shedding Snake",Q),++L%2&&D(),J("Press S",42),S=[],E(),O=[Q/2+W/2],S[O]=2,A=U?1:A},150)
-    </script>
-</div></main>
+            <main><h1>Shortcuts</h1>
+<p>Once you&#39;ve added the Keptab extension to your browser, these keyboard shortcuts can be used from any tab.</p>
+<h2>Keptab Shortcuts</h2>
+<p>Keptab has defined (must hard-code) some keyboard shortcuts for user and shortcuts would make things done quickly.</p>
+<h3>Show Keptab Index</h3>
+<p>You can use the following keyboard shortcut to display Keptab index page.</p>
+<ul>
+<li>windows: <code>Alt</code> + <code>K</code></li>
+<li>Mac: <code>Option</code> + <code>K</code></li>
+</ul>
+<h3>Store All Tabs</h3>
+<p>You can use the following keyboard shortcut to store all tabs in <strong>current browser window</strong>. The <strong>current window</strong> means the window that was most recently focused — typically the window <strong>on top</strong>.</p>
+<ul>
+<li>windows: <code>Alt</code> + <code>A</code></li>
+<li>Mac: <code>Option</code> + <code>A</code></li>
+</ul>
+<h3>Store Current Tabs</h3>
+<p>You can use the following keyboard shortcut to store all <strong>current</strong> tabs. The <strong>current</strong> tabs is including the tabs you <strong>highlighted</strong> or <strong>selected</strong> tabs (one or more than one tabs) in the currently-focused window (or most recently-focused window, if no Chrome windows are focused). You can use this to store the tabs you highlighted.</p>
+<ul>
+<li>windows: <code>Alt</code> + <code>C</code></li>
+<li>Mac: <code>Option</code> + <code>C</code></li>
+</ul>
+<h3>Store All Tabs in All Windows</h3>
+<p>You can use the following keyboard shortcut to store all tabs in all browser windows.</p>
+<ul>
+<li>windows: <code>Alt</code> + <code>W</code></li>
+<li>Mac: <code>Option</code> + <code>W</code></li>
+</ul>
+<h2>How to Change Keptab Shortcuts</h2>
+<p>Keptab has defined (must hard-code) some keyboard shortcuts for user. But if you don&#39;t like or make conflict with others apps, you can modify those shortcuts as follow tips.</p>
+<h3>Chrome/Edge Browser</h3>
+<p>End users are free to remap all global keyboard shortcuts to their preferred key combination using the UI exposed at <code>chrome://extensions/shortcuts</code>, yes, every extensions would been rewritten it shortcuts with this.</p>
+<ul>
+<li>Goto the <code>chrome://extensions/shortcuts</code> URL</li>
+<li>Click the <strong>&quot;Pencil&quot;</strong> icon to change the shortcut</li>
+</ul>
+<blockquote>
+<p>Change the shortcut just simple to click the keyboard with the key you like!</p>
+</blockquote>
+<p>Attention please, Chrome/Edge browser <strong>MUST</strong> have requirements as follow:</p>
+<ul>
+<li>Extension command shortcuts must include either <code>Ctrl</code> or <code>Alt</code>.<ul>
+<li>Modifiers <strong>cannot</strong> be used in combination with Media Keys.</li>
+</ul>
+</li>
+<li>On macOS <code>Ctrl</code> is automatically converted into <code>Command</code>.<ul>
+<li>To use the Control key on macOS, replace <code>Ctrl</code> with <code>MacCtrl</code> when defining the <code>&quot;mac&quot;</code> shortcut.</li>
+<li>Using <code>MacCtrl</code> in the combination for another platform will cause a validation error and prevent the extension from being installed.</li>
+</ul>
+</li>
+<li><code>Shift</code> is an optional modifier on all platforms.</li>
+<li><code>Search</code> is an optional modifier exclusive to ChromeOS.</li>
+<li>Certain operating system and Chrome shortcuts (e.g. window management) always take priority over Extension command shortcuts and can not be overwritten.</li>
+</ul>
+<blockquote>
+<p>Key combinations that involve <code>Ctrl</code> + <code>Alt</code> are not permitted in order to avoid conflicts with the <code>AltGr</code> key.</p>
+</blockquote>
+<h3>Firefox Browser</h3>
+<p>You can remap Firefox browser keyboard shortcuts to their preferred key combination as follow:</p>
+<ul>
+<li>Goto the <code>about:addons</code> URL</li>
+<li>Click the <strong>&quot;dots&quot;</strong> icon next to the Keptab extension, then click &quot;Manage&quot;</li>
+<li>Click the <strong>&quot;cog&quot;</strong> icon, then click &quot;Manage Extension Shortcuts&quot;</li>
+</ul>
+</main>
         </div>
     </div>
     <footer class="footer">

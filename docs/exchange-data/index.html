@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found - Keptab</title>
-    <meta name="description" content="We're sorry that we couldn't find the page you requested. Please retry after a moment.">
+    <title>Data Import and Export - Keptab</title>
+    <meta name="description" content="This page outlines the procedures for importing and exporting Keptab data into and out of Keptab and provides details about the various formats that can be imported and exported.">
     <!-- opengraph -->
-    <meta property="og:title" content="Page Not Found - Keptab">
-    <meta property="og:description" content="We're sorry that we couldn't find the page you requested. Please retry after a moment.">
+    <meta property="og:title" content="Data Import and Export - Keptab">
+    <meta property="og:description" content="This page outlines the procedures for importing and exporting Keptab data into and out of Keptab and provides details about the various formats that can be imported and exported.">
     <meta property="og:image" content="/assets/images/keptab-head-image.png">
     <!-- favicons -->
 	<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/keptab-logo-48x48.png">
@@ -35,19 +35,53 @@
     </header>
     <div class="content">
         <div class="container">
-            <main><h1>Page Not Found</h1>
-<p>We&#39;re sorry that we couldn&#39;t find the page you requested. Please retry after a moment.</p>
-<p>If you have any questions, please feel free to <a href="/feedback/">Feedback</a>.</p>
-<br>
-<hr>
-<div class="game404">
-    <h2>Shall We Play A Game? Shedding Snake!</h2>
-    <canvas id="a"></canvas>
-    <script type="text/javascript">
-        //! (c) 2020 Niklas Berg, https://github.com/nkholski/shedding-snake, GNU General Public License v3.0
-        W=a.width=a.height=900,Q=30,L=S=u=l=d=r=A=R=Y=U=I=O=P=T=0,c=a.getContext`2d`,c.textAlign="center",onkeydown=e=>{top["lld*rlurdu"[e.which%32%17]]=e.type[5],U=u?2:r?3:d?4:l?5:U,u=l=d=r=0},E=e=>{do{R=W*Math.random()|0}while(S[R]);S[R]=3},D=(e="#000")=>c.fillStyle=e,J=(e,t=3,i=50)=>c.fillText(e,9*i,9*t),F=(e,t=0)=>c.translate(15,15)+c.rotate(U*t)+J(e,.5,0),K=e=>c.font=e+"px a",setInterval(e=>{if(A){if(K(25),G=O[0]+(2==U?-Q:3==U?1:4==U?Q:-1),G+=G<0?W:G>W?-W-1:0,H=O.pop(),O=[G,...O],S[H]=--P<0?0:1,3==S[G])E(),S[H]=2,P=O.length,S=S.map(e=>2==e?1:e),T=++Y>T?Y:T,O.push(H);else if(S[G])return void(P=Y=U=A=0);for(S[G]=2,i=0;i<W;i++)c.save(),K(25),x=i%Q,c.translate(x*Q,i-x),$=O[0]==i,$&&F("🐸",1.6),D([,"#DDD","#693"][S[i]]),$||(c.fillRect(0,0,Q,Q),2==S[i]&&F`✖️`,3==S[i]&&F(i%2?"🍎":"🍒")),c.restore();D`#099`,J(`🕹️Score: ${Y} 🐍 Top: ${T}⭐`)}else K(60),D`#099`,J("🐍Shedding Snake",Q),++L%2&&D(),J("Press S",42),S=[],E(),O=[Q/2+W/2],S[O]=2,A=U?1:A},150)
-    </script>
-</div></main>
+            <main><h1>Data Import and Export</h1>
+<p>This page outlines the procedures for importing and exporting Keptab data into and out of Keptab and provides details about the various formats that can be imported and exported.</p>
+<h2>Import</h2>
+<p>Keptab allows for the import of all the tabs group(tabs list) you exported before. You can do this:</p>
+<ul>
+<li>Goto <strong>Keptab Options</strong> and click the <strong>Slected File...</strong></li>
+<li>Slected the JSON file you exported before.</li>
+<li>Click <strong>Import Data</strong> and wait a moment.</li>
+</ul>
+<h2>Export</h2>
+<p>Keptab allows for the export of all current tabs group(tabs list). You can do this:</p>
+<ul>
+<li>click <strong>Export Data</strong> in the Keptab page right top.</li>
+<li>Goto <strong>Keptab Options</strong> and click the <strong>Export Data</strong></li>
+</ul>
+<p>All current tabs group(tabs list) exported as JSON file, it&#39;s JSON schema as follow:</p>
+<pre><code class="language-typescript">
+// typescript types
+Array&lt;{
+    _id: number,
+    title: string,
+    tabs: Array&lt;{
+        url: string,
+        title: string,
+        favIconUrl: string,
+        pinned: boolean,
+        muted: boolean
+    }&gt;,
+    tags: Array&lt;string&gt;,
+    time: number,
+    lock: boolean,
+    star: boolean
+}&gt;
+
+</code></pre>
+<h3>Convert Keptab Exporting Data</h3>
+<p>Keptab&#39;s exporting and importing data format used rich JSON representation. It&#39;s better to exchange data but not simplicity and compactness enough for daily use like copy and paste as text. The text format listed as follow:</p>
+<pre><code class="language-plaintext">
+https://keptab.com/ | Keptab
+https://keptab.com/docs/ | Docs - Keptab
+https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi | Keptab - Chrome Web Store
+
+</code></pre>
+<p>Here is the tool <strong><a href="/migrate/">&quot;Convert Keptab Exporting Data&quot;</a></strong> to convert Keptab&#39;s exporting data to the text, that is easy to copy and paste to anywhere.</p>
+<h3>Why Keptab chosen JSON Format for Data Exchanging</h3>
+<p>Compared to plain text format, JSON format is more perfect for exporting and importing data. The data importing and exporting is using by the program, not for human reading.</p>
+</main>
         </div>
     </div>
     <footer class="footer">

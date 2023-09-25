@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found - Keptab</title>
-    <meta name="description" content="We're sorry that we couldn't find the page you requested. Please retry after a moment.">
+    <title>FAQ - Keptab</title>
+    <meta name="description" content="Those frequently asked questions provides answers to basic questions about Keptab. If you have more questions, feel free to [contact us](/feedback/).">
     <!-- opengraph -->
-    <meta property="og:title" content="Page Not Found - Keptab">
-    <meta property="og:description" content="We're sorry that we couldn't find the page you requested. Please retry after a moment.">
+    <meta property="og:title" content="FAQ - Keptab">
+    <meta property="og:description" content="Those frequently asked questions provides answers to basic questions about Keptab. If you have more questions, feel free to [contact us](/feedback/).">
     <meta property="og:image" content="/assets/images/keptab-head-image.png">
     <!-- favicons -->
 	<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/keptab-logo-48x48.png">
@@ -35,19 +35,43 @@
     </header>
     <div class="content">
         <div class="container">
-            <main><h1>Page Not Found</h1>
-<p>We&#39;re sorry that we couldn&#39;t find the page you requested. Please retry after a moment.</p>
-<p>If you have any questions, please feel free to <a href="/feedback/">Feedback</a>.</p>
+            <main><h1>FAQ</h1>
+<h2>Overview</h2>
+<p>Those frequently asked questions provides answers to basic questions about Keptab. If you have more questions, feel free to <a href="/feedback/">contact us</a>.</p>
+<h3>Q: What is Keptab?</h3>
+<p>Keptab is a powerful tabs manager for <a href="https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi">Google Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/keptab/jhajaihldpgefhccepbjdpiimikplhng">Microsoft Edge</a>, or <a href="https://addons.mozilla.org/addon/keptab/">Mozilla Firefox</a>. It convert all your tabs with one click to a simple list. Keptab will give you more power with your browser tabs.</p>
+<p>Get more information in <a href="https://keptab.com/blog/">Keptab Blog</a>.</p>
+<h3>Q: How to Migrate Date to Keptab?</h3>
+<p>Keptab supported <a href="https://one-tab.com">OneTab</a> migrate data to Keptab. You can use <a href="/migrate/">Migrate to Keptab</a> page to finish this.</p>
+<h3>Q: How to Install Keptab?</h3>
+<p>Jsut open <a href="https://keptab.com/">Keptab Website</a> and click the button on page right top, goto the store/add-ons of your browser and install it. You can click button below and follow the link to the browser extension installation.</p>
 <br>
-<hr>
-<div class="game404">
-    <h2>Shall We Play A Game? Shedding Snake!</h2>
-    <canvas id="a"></canvas>
-    <script type="text/javascript">
-        //! (c) 2020 Niklas Berg, https://github.com/nkholski/shedding-snake, GNU General Public License v3.0
-        W=a.width=a.height=900,Q=30,L=S=u=l=d=r=A=R=Y=U=I=O=P=T=0,c=a.getContext`2d`,c.textAlign="center",onkeydown=e=>{top["lld*rlurdu"[e.which%32%17]]=e.type[5],U=u?2:r?3:d?4:l?5:U,u=l=d=r=0},E=e=>{do{R=W*Math.random()|0}while(S[R]);S[R]=3},D=(e="#000")=>c.fillStyle=e,J=(e,t=3,i=50)=>c.fillText(e,9*i,9*t),F=(e,t=0)=>c.translate(15,15)+c.rotate(U*t)+J(e,.5,0),K=e=>c.font=e+"px a",setInterval(e=>{if(A){if(K(25),G=O[0]+(2==U?-Q:3==U?1:4==U?Q:-1),G+=G<0?W:G>W?-W-1:0,H=O.pop(),O=[G,...O],S[H]=--P<0?0:1,3==S[G])E(),S[H]=2,P=O.length,S=S.map(e=>2==e?1:e),T=++Y>T?Y:T,O.push(H);else if(S[G])return void(P=Y=U=A=0);for(S[G]=2,i=0;i<W;i++)c.save(),K(25),x=i%Q,c.translate(x*Q,i-x),$=O[0]==i,$&&F("🐸",1.6),D([,"#DDD","#693"][S[i]]),$||(c.fillRect(0,0,Q,Q),2==S[i]&&F`✖️`,3==S[i]&&F(i%2?"🍎":"🍒")),c.restore();D`#099`,J(`🕹️Score: ${Y} 🐍 Top: ${T}⭐`)}else K(60),D`#099`,J("🐍Shedding Snake",Q),++L%2&&D(),J("Press S",42),S=[],E(),O=[Q/2+W/2],S[O]=2,A=U?1:A},150)
-    </script>
-</div></main>
+<div class="center">
+    <a href="https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi" target="_blank" class="btn js-install" title="Get Keptab for Chrome, It's Free">Get Keptab for <strong>Chrome</strong></a>
+</div>
+<br>
+
+<blockquote>
+<p>Please note that you need to <strong>&quot;pin&quot;</strong> the Keptab icon to your browser toolbar, so it is not hidden within the extensions icon.</p>
+</blockquote>
+<h3>Q: Open Keptab with Blank Page</h3>
+<p>This situation is caused by the use of <code>IndexedDB</code> behind Keptab to lose data. Although Chrome claims that <code>IndexedDB</code> will not be lost as a transactional database, in actual use, there are still frequent instances of data loss, especially when cleaning browser cache, which can easily cause plugin data loss.</p>
+<p>After Keptab V1.0, we added <code>recover data</code> mode in Keptab Options, you can goto Keptab Options page to recover your data and then re-import Keptab.</p>
+<blockquote>
+<p>More details about <strong>data recovery</strong>, please goto <a href="/docs/backup-data/">Backup Data</a></p>
+</blockquote>
+<h3>Q: Restarting Keptab</h3>
+<p>If Keptab appears to be stuck, you can restart it by toggling it off and back on again. Please be careful <strong>not</strong> to click <strong>&quot;Remove&quot;</strong>, as this will clear all your Keptab data.</p>
+<h3>Q: Download and Install from ZIP Package</h3>
+<p>Just open <a href="https://keptab.com/changelog/">Keptab Changelog</a> and locate the latest version, please choose your browser version and download the ZIP package file.</p>
+<p>To install a zip file extension to the Chrome browser, you must first enable <strong>Developer Mode</strong> for extensions. To activate and install a zip file add-on, Type <code>chrome://extensions</code> on the address bar and hit enter &gt; Enable the toggle for Developer tool &gt; Tap on <strong>Load unpacked</strong> and select the zip file.</p>
+<blockquote>
+<p>More details about installing ZIP package, please goto <a href="/docs/installations/">Installations</a></p>
+</blockquote>
+<!---------------------------------[ Internal ]-------------------------------->
+
+<!-- safari -->
+</main>
         </div>
     </div>
     <footer class="footer">

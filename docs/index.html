@@ -3,11 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found - Keptab</title>
-    <meta name="description" content="We're sorry that we couldn't find the page you requested. Please retry after a moment.">
+    <title>Keptab</title>
+    <meta name="description" content="[![Badge Issues]][Issues]
+[![Badge Chrome]][Chrome]
+[![Badge Edge]][Edge]
+[![Badge Firefox]][Firefox]">
     <!-- opengraph -->
-    <meta property="og:title" content="Page Not Found - Keptab">
-    <meta property="og:description" content="We're sorry that we couldn't find the page you requested. Please retry after a moment.">
+    <meta property="og:title" content="Keptab">
+    <meta property="og:description" content="[![Badge Issues]][Issues]
+[![Badge Chrome]][Chrome]
+[![Badge Edge]][Edge]
+[![Badge Firefox]][Firefox]">
     <meta property="og:image" content="/assets/images/keptab-head-image.png">
     <!-- favicons -->
 	<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/keptab-logo-48x48.png">
@@ -35,19 +41,72 @@
     </header>
     <div class="content">
         <div class="container">
-            <main><h1>Page Not Found</h1>
-<p>We&#39;re sorry that we couldn&#39;t find the page you requested. Please retry after a moment.</p>
-<p>If you have any questions, please feel free to <a href="/feedback/">Feedback</a>.</p>
-<br>
+            <main><p><a href="https://github.com/keptab/keptab/issues"><img src="https://img.shields.io/github/issues/keptab/keptab" alt="Badge Issues"></a>
+<a href="https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi"><img src="https://img.shields.io/chrome-web-store/rating/feodekcipceogpeomnijgmdlmocbggbi?label=Chrome" alt="Badge Chrome"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/keptab/jhajaihldpgefhccepbjdpiimikplhng"><img src="https://img.shields.io/badge/dynamic/json?label=Edge&color=brightgreen&query=%24.averageRating&suffix=%2F%35&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fjhajaihldpgefhccepbjdpiimikplhng" alt="Badge Edge"></a>
+<a href="https://addons.mozilla.org/addon/keptab/"><img src="https://img.shields.io/amo/rating/keptab?label=Firefox" alt="Badge Firefox"></a></p>
 <hr>
-<div class="game404">
-    <h2>Shall We Play A Game? Shedding Snake!</h2>
-    <canvas id="a"></canvas>
-    <script type="text/javascript">
-        //! (c) 2020 Niklas Berg, https://github.com/nkholski/shedding-snake, GNU General Public License v3.0
-        W=a.width=a.height=900,Q=30,L=S=u=l=d=r=A=R=Y=U=I=O=P=T=0,c=a.getContext`2d`,c.textAlign="center",onkeydown=e=>{top["lld*rlurdu"[e.which%32%17]]=e.type[5],U=u?2:r?3:d?4:l?5:U,u=l=d=r=0},E=e=>{do{R=W*Math.random()|0}while(S[R]);S[R]=3},D=(e="#000")=>c.fillStyle=e,J=(e,t=3,i=50)=>c.fillText(e,9*i,9*t),F=(e,t=0)=>c.translate(15,15)+c.rotate(U*t)+J(e,.5,0),K=e=>c.font=e+"px a",setInterval(e=>{if(A){if(K(25),G=O[0]+(2==U?-Q:3==U?1:4==U?Q:-1),G+=G<0?W:G>W?-W-1:0,H=O.pop(),O=[G,...O],S[H]=--P<0?0:1,3==S[G])E(),S[H]=2,P=O.length,S=S.map(e=>2==e?1:e),T=++Y>T?Y:T,O.push(H);else if(S[G])return void(P=Y=U=A=0);for(S[G]=2,i=0;i<W;i++)c.save(),K(25),x=i%Q,c.translate(x*Q,i-x),$=O[0]==i,$&&F("🐸",1.6),D([,"#DDD","#693"][S[i]]),$||(c.fillRect(0,0,Q,Q),2==S[i]&&F`✖️`,3==S[i]&&F(i%2?"🍎":"🍒")),c.restore();D`#099`,J(`🕹️Score: ${Y} 🐍 Top: ${T}⭐`)}else K(60),D`#099`,J("🐍Shedding Snake",Q),++L%2&&D(),J("Press S",42),S=[],E(),O=[Q/2+W/2],S[O]=2,A=U?1:A},150)
-    </script>
-</div></main>
+
+<h1 class="center">
+    <sub>
+        <img src="/assets/images/keptab-logo.svg" height="32" width="32"> 
+    </sub>
+    Keptab Docs
+</h1>
+<p class="center">
+    <p class="center">manage tabs friendly and reduce tabs clutter</p>
+    <p class="center">
+      <span>帮助你更好地管理标签页，并减轻标签页混乱现象</span>
+      <sup>zh-CN</sup>
+    </p>
+</p>
+
+<hr>
+
+<!-- 所有浏览器的下载链接，使用图标展示 -->
+<div class="center">
+    <a class="chrome inline-block" href="https://chrome.google.com/webstore/detail/keptab/feodekcipceogpeomnijgmdlmocbggbi">
+        <img src="/assets/images/available-in-the-chrome-web-store.png" alt="Get Keptab for Google Chrome">
+    </a>
+    <a class="edge inline-block" href="https://microsoftedge.microsoft.com/addons/detail/keptab/jhajaihldpgefhccepbjdpiimikplhng">
+        <img src="/assets/images/get-it-from-microsoft.png" alt="Get Keptab for Microsoft Edge">
+    </a>
+    <a class="firefox inline-block" href="https://addons.mozilla.org/addon/keptab/">
+        <img src="/assets/images/get-the-add-on.png" alt="Get Keptab for Mozilla Firefox">
+    </a>
+    <!-- safari -->
+    <a class="opera inline-block" href="https://addons.opera.com/extensions/details/keptab/">
+        <img src="/assets/images/get-it-from-opera-add-ons.png" alt="Get Keptab for Opera">
+    </a>
+</div>
+
+<hr>
+<p><a href="https://keptab.com/">Keptab</a> is a powerful tabs manager for Chrome, Edge, Firefox, it convert all your tabs with one click to a simple list. Keptab will give you more power with your browser tabs.</p>
+<p>Here is <strong>Keptab Documents</strong>. You can find everything about Keptab.</p>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="/docs/getting-started/">Getting Started</a></li>
+<li><a href="/docs/installations/">Installations</a></li>
+</ul>
+<h2>In-Depth</h2>
+<ul>
+<li><a href="/docs/shortcuts/">Shortcuts</a></li>
+<li><a href="/docs/drag-and-drop/">Drag and Drop</a></li>
+<li><a href="/docs/exchange-data/">Exchange Data</a></li>
+</ul>
+<h2>Extra Topics</h2>
+<ul>
+<li><a href="/docs/backup-data/">Backup Data</a></li>
+</ul>
+<p>If you have more questions, feel free to contact us at <code>hi@keptab.com</code></p>
+<p>If you are a Github fans, please feel free to create an issue in <a href="https://github.com/keptab/keptab/issues">Keptab Issues</a>. We will reply later.</p>
+<!---------------------------------[ docs ]-------------------------------->
+
+<!---------------------------------[ Internal ]-------------------------------->
+
+<!----------------------------------[ Badges ]--------------------------------->
+
+</main>
         </div>
     </div>
     <footer class="footer">
