@@ -109,6 +109,7 @@
      * @param {string} lists OneTab 导出数据/字符串
      */
     function toKeptab(lists) {
+        const NOW = Date.now()
         return lists.split("\n\n")
             .filter(list => list.trim())
             .map(list => list.split("\n")
@@ -124,7 +125,8 @@
                     }
                 })
             ).map((tabs, idx) => {
-                const now = Date.now() - idx
+                // 以当前时间按 idx 顺序往后排列，为了防止秒数相同，此处直接顺序递减
+                const now = NOW - (idx * 1000) 
                 const urls = tabs.map(tab => tab.url)
                 return {
                     _id: now,
